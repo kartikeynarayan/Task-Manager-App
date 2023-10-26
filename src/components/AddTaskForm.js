@@ -1,32 +1,32 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { addTask } from '../reducers/taskReducer';
+import { useDispatch } from 'react-redux'
+import { addTask } from '../reducers/taskReducer'
 
 const TaskForm = () => {
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
-  const [formData, setFormData] = useState({ title : '', description : '' });
+  const [formData, setFormData] = useState({ title : '', description : '' })
 
-  const { title, description } = formData;
+  const { title, description } = formData
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name] : e.target.value,
-    });
-  };
+    })
+  }
 
   const handleAddTask = () => {
-    const id = Date.now().toString();
-    const taskToAdd = { id, ...formData };
-    dispatch(addTask(taskToAdd));
-    setFormData({ title : '', description : '' }); 
+    const id = Date.now().toString()
+    const taskToAdd = { id, ...formData }
+    dispatch(addTask(taskToAdd))
+    setFormData({ title : '', description : '' })
   };
 
   return (
     <>
-      <h2>Add Task</h2>
+      <h2>Add Your Task</h2>
       <div>
         <label>Title :</label>
         <input 
@@ -51,9 +51,9 @@ const TaskForm = () => {
         />
       </div>
 
-      <button onClick = {handleAddTask}>Add</button>
+      <button onClick = {handleAddTask}>Add Task</button>
     </>
   )
-};
+}
 
-export default TaskForm;
+export default TaskForm

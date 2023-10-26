@@ -1,28 +1,28 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { updateTask } from '../reducers/taskReducer';
+import { useDispatch } from 'react-redux'
+import { updateTask } from '../reducers/taskReducer'
 
 const UpdateTaskForm = ({ task, onCancelEdit }) => {
 
-  const dispatch = useDispatch();
+  const dispatch = useDispatch()
 
   const [formData, setFormData] = useState({
     id: task.id,
     title: task.title,
     description: task.description,
-  });
+  })
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name] : e.target.value,
-    });
-  };
+    })
+  }
 
   const handleUpdate = () => {
     dispatch(updateTask(formData))
-    onCancelEdit();
-  };
+    onCancelEdit()
+  }
 
   return (
     <>
@@ -50,10 +50,10 @@ const UpdateTaskForm = ({ task, onCancelEdit }) => {
         />
       </div>
 
-      <button onClick = {handleUpdate}>Update</button>
-      <button onClick = {onCancelEdit}>Cancel</button>
+      <button onClick = {handleUpdate}>Update Task</button>
+      <button onClick = {onCancelEdit}>Cancel Task</button>
     </>
   )
-};
+}
 
-export default UpdateTaskForm;
+export default UpdateTaskForm

@@ -1,6 +1,6 @@
-import React from 'react';
-import AddTaskForm from './AddTaskForm';
-import TaskList from './TaskList';
+import React from 'react'
+import AddTaskForm from './AddTaskForm'
+import TaskList from './TaskList'
 
 const Home = () => {
   return (
