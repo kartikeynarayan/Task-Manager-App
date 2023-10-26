@@ -22,7 +22,9 @@ const TaskForm = () => {
     const taskToAdd = { id, ...formData }
     dispatch(addTask(taskToAdd))
     setFormData({ title : '', description : '' })
-  };
+  }
+
+  const isButtonEnabled = ((title.trim() !== '') && (description.trim() !== ''))
 
   return (
     <>
@@ -51,7 +53,7 @@ const TaskForm = () => {
         />
       </div>
 
-      <button onClick = {handleAddTask}>Add Task</button>
+      <button onClick = {handleAddTask} disabled = {!isButtonEnabled}>Add Task</button>
     </>
   )
 }
