@@ -1,13 +1,13 @@
 # Task Manager App
 
 **Table of Contents:**
-- Description
-- Features
-- Demo
-- Installation
-- Usage
-- Contributing
-- License
+- [Description](#description)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Description
 
