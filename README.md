@@ -1,5 +1,3 @@
-Certainly! Below is a README file for your Task Manager application built with Redux.
-
 # Task Manager App
 
 **Table of Contents:**
