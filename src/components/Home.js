@@ -1,6 +1,6 @@
-import React from 'react'
-import AddTaskForm from './AddTaskForm'
-import TaskList from './TaskList'
+import React from 'react';
+import TaskList from './TaskList';
+import AddTaskForm from './AddTaskForm';
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       <AddTaskForm />
       <TaskList />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

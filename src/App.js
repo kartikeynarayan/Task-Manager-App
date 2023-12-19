@@ -1,13 +1,13 @@
-import React from 'react'
-import Home from './components/Home'
+import React from 'react';
+import Home from './components/Home';
 
 const App = () => {
   return (
     <>
-      <h1>Your Task Manager</h1>
+      <h1>Task Manager</h1>
       <Home />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
