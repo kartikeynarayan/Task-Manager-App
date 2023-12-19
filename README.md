@@ -21,7 +21,7 @@ The Task Manager App is a web application built with React.js and Redux, designe
 
 ## Demo
 
-You can try out the [live demo here]() to see the Task Manager App in action.
+You can try out the [live demo here](https://simple-task-manager-app.vercel.app/) to see the Task Manager App in action.
 
 ## Installation
 
@@ -30,8 +30,8 @@ To set up the Task Manager App on your local machine, follow these steps
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/
-   cd <name>
+   git clone https://github.com/kartikeynarayan/Task-Manager-App.git
+   cd Task-Manager-App
    ```
 
 2. **Install Dependencies:**
